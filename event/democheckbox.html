@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeStatus(){
+            if(document.getElementById('checkbox').checked==true)
+                 document.getElementById('nutbam').disabled=false;
+            else
+                document.getElementById('nutbam').disabled=true;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="checkbox" onclick="changeStatus();" id="checkbox"> Toi dong y
+    <br>
+    <input type="button" value="Gui" disabled id="nutbam">
+</form>
+</body>
+</html>
